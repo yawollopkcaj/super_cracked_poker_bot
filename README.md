@@ -51,14 +51,6 @@ Build an super duper cracked **open-source exploitative poker bot** that uses **
 
 ---
 
-## 🧠 Resources to Get You Started
-- 🔗 Papers (e.g. DeepStack, Slumbot, Exploitability papers)  
-- 📘 Tutorials (on CFR, bandits, or Bayesian ML)  
-- 🛠️ Codebases (OpenSpiel, PokerRL, PettingZoo)  
-- 🧪 Dataset options (e.g. Poker Hand data, custom game logs)
-
----
-
 ## ❌ What Current Projects Lack
 
 1. **Transparency & Explainability**  
