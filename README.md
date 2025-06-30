@@ -101,3 +101,4 @@ This repository is intended for:
 - Tutorials on CFR, Bayesian ML, and multi-armed bandits
 - Libraries: OpenSpiel, PokerRL, PettingZoo
 - Datasets: Poker hand classification, custom self-play logs
+- Cool read for 2 player poker... but I want to make a bot that does well in a ~6-8 player game (https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf).
