@@ -1,7 +1,7 @@
-# ♠️ Super Cracked Poker Bot
+# ♠️ Super Duper Cracked Poker Bot
 
 ### 🎯 OVERARCHING GOAL  
-Build an **open-source exploitative poker bot** that uses **machine learning** and **advanced math**.
+Build an super duper cracked **open-source exploitative poker bot** that uses **machine learning** and **advanced math** that will destroy my fraternity brothers in our poker games.
 
 ---
 
