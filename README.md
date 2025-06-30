@@ -93,5 +93,4 @@ Build an super duper cracked **open-source exploitative poker bot** that uses **
 - Exploitative, real-time adaptive strategies  
 - CFR + Deep RL fusion  
 - Web demo + videos + blog content  
-- Open-source code, data, and visualizations  
-- Unique portfolio piece for quant/ML/AI firms
+- Open-source code, data, and visualizations
