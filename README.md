@@ -1,8 +1,8 @@
-# Super Duper Cracked Poker Bot
+# Super Duper Cracked Multi-Player Poker Bot
 
 ## Project Overview
 
-My **Super Duper Cracked Poker Bot** is an open-source project focused on developing an **exploitative poker AI agent** using a blend of **machine learning**, **mathematical game theory**, and practical engineering. The project is designed as a robust, transparent, and adaptive poker agent that can compete, learn, and evolve against real opponents in real time so I can shit on my fraternity brothers and win back my dues.
+My **Super Duper Cracked Multi-Player Poker Bot** is an open-source project focused on developing an **exploitative poker AI agent** using a blend of **machine learning**, **mathematical game theory**, and practical engineering. The project is designed as a robust, transparent, and adaptive poker agent that can compete, learn, and evolve against real opponents in real time so I can shit on my fraternity brothers and win back my dues.
 
 This repository is intended for:
 - Those interested in poker AI, opponent modeling, and reinforcement learning.
