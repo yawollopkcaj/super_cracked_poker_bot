@@ -149,19 +149,22 @@ This repository is intended for:
 ### PokerGPT: An End-to-End Lightweight Solver for Multi-Player Texas Hold'em via LLM (Jan 2024)
 
 **What makes this project special?**  
+
 PokerGPT overcomes exponential game tree growth of CFR in multiplayer games by transforming a set of textual records acquired from real games into prompts, and uses them to fine-tune a lightweight pre-trained LLM — further processing them into textual instructions using prompt engineering techniques.
 
 **How can I apply these techniques to my poker bot?**  
+
 Try using an LLM for high-level reasoning and pair it with quick numeric modules to compute odds precisely — mitigating LLM math weakness.
 
 ---
 
 ### TL;DR
 
-Pluribus is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI.  
-PokerGPT is a flexible, lightweight, text-first system that’s easier to build, train, and scale — but it sacrifices GTO rigor, math precision, and adaptive play.
+- Pluribus is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI. 
 
-Make sure to leverage frameworks like **OpenHoldem** to benchmark and evaluate the bot alongside baselines.
+- PokerGPT is a flexible, lightweight, text-first system that’s easier to build, train, and scale — but it sacrifices GTO rigor, math precision, and adaptive play.
+
+- Make sure to leverage frameworks like **OpenHoldem** to benchmark and evaluate the bot alongside baselines.
 
 ---
 
