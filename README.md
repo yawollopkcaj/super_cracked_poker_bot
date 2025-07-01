@@ -130,10 +130,7 @@ This repository is intended for:
 
 ## Main Research
 
-### Pluribus
-
-**Abstract:**  
-The Pluribus poker bot is the first AI to beat professionals in multiplayer no-limit Texas Hold'em (2019).
+### Pluribus: A poker bot is the first AI to beat professionals in multiplayer no-limit Texas Hold'em (2019).
 
 **What makes this project special?**  
 - **Solving Multiplayer No-Limit Hold'em:** Prev AI triumphs were limited to heads-up (two-player) games. Pluribus is the first to consistently win at 6-player.  
