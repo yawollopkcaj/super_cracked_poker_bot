@@ -105,3 +105,39 @@ This repository is intended for:
 - MUST READ, still gathering resources (https://news.ycombinator.com/item?id=20414905)
 - Pre-existing bots to look into: Pluribus (first AI to beat humans in multiplayer poker, 2019), ReBeL (Uses recursive reasoning + RL), PokerSnowie (commercial AI trained via self-play)
 - Another interresting read but potentially outdated (https://poker-ai.org/page/2/).
+
+--- 
+
+## Research
+
+TLDR;
+
+The **Pluribus** poker bot is the first AI to beat profeshionals in multiplayer no-limit Texas Hold'em (2019).
+
+What makes this project special?
+
+1. **Solving Multiplayer No-Limit Hold'em**
+  Prev AI triumphs were limited to heads-up (two player) games. **Pluribus** is the first to consistantly win at 6-player.
+
+2. **Hybrid Strategy: Equilibrium + Search**
+   Uses **approximate Nash equilibrium strategies precomputed for abstracted game states. At runtime, it performs **limited-depth search with real-time opponent modeling and **robust Monte Carlo sampling**, discarding opponent actions that are off-path or degenerate.
+
+3. **Efficiency**
+   Unlike earlier systemes requiring supercomputers, Pluribus runs on **a single machine with multiple cores**, making it more accessible.
+
+How can I apply these techniques to my poker bot?
+
+1. **Abstract Large Games**
+   Simplify the game by mapping similar hands into fewer "buckets." Use equilibrium computation (e.g., CFR) over the abstracted version.
+   
+2. **Combine Offline + Online Strategy**
+   Precompute offline and at runtime use **online search** (depth limited) combined with **opponent-specific adjustments** based on recent play.
+   
+3. **Multiplayer Scaling**
+   Adopt abstractions and search only around your node other than manage computational complexity.
+   
+4. **Opponent Modeling for Bluffing**
+   Fit a simple model (e.g., logistic regression, Bayesian updates) to track tendancies like frequency of bluffing or folding, adjusting your strategy exploitatively when edges are found.
+   
+5. **Leverage Poker Frameworks**
+    Use tools like PokerKit for game state management and abstraction, and **deep reinforcement learning** for strategy fine-tuning.
