@@ -110,6 +110,8 @@ This repository is intended for:
 
 ## Research
 
+### Abstract; 
+
 The **Pluribus** poker bot is the first AI to beat profeshionals in multiplayer no-limit Texas Hold'em (2019).
 
 What makes this project special?
@@ -150,8 +152,14 @@ How can I apply these techniques to my poker bot?
 
    Try using LLM for high-level reasoning and pair it with quick numeric modules to compute odds percisely - mitigating LLM math weakness
 
-TLDR;
+### TLDR;
 
 **Pluribus** is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI. **PokerGPT** is a flexible, lightweight, text-first system that’s easier to build, train, and scale—but it sacrifices GTO rigor, math precision, and adaptive play.
 
 Make sure to **Leverage frameworks** like OpenHoldem to benchmark and evaluate the bot alongside baselines.
+
+Sources: 
+
+**Pluribus**: https://news.ycombinator.com/item?id=20414905
+**PokerGPT**: https://arxiv.org/abs/2401.06781?utm_source=chatgpt.com
+
