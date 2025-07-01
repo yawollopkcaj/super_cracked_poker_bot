@@ -110,8 +110,6 @@ This repository is intended for:
 
 ## Research
 
-TLDR;
-
 The **Pluribus** poker bot is the first AI to beat profeshionals in multiplayer no-limit Texas Hold'em (2019).
 
 What makes this project special?
@@ -141,3 +139,19 @@ How can I apply these techniques to my poker bot?
    
 5. **Leverage Poker Frameworks**
     Use tools like PokerKit for game state management and abstraction, and **deep reinforcement learning** for strategy fine-tuning.
+
+**PokerGPT:** An End-to-End Lightweight Solver for Multi-Player Texas Hold'em via LLM (Jan 2024).
+
+What makes this project special?
+
+   PokerGPT overcomes exponential game tree growth of CFR in multi-player games by transforming a set of textual records acquired from real games into prompts, and uses them to fine-tune a lightweight pre-trained LLM further processing them into textual instruction using prompt engineering techniques.
+
+How can I apply these techniques to my poker bot?
+
+   Try using LLM for high-level reasoning and pair it with quick numeric modules to compute odds percisely - mitigating LLM math weakness
+
+TLDR;
+
+**Pluribus** is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI. **PokerGPT** is a flexible, lightweight, text-first system that’s easier to build, train, and scale—but it sacrifices GTO rigor, math precision, and adaptive play.
+
+Make sure to **Leverage frameworks** like OpenHoldem to benchmark and evaluate the bot alongside baselines.
