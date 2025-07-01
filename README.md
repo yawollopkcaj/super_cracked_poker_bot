@@ -95,7 +95,7 @@ This repository is intended for:
 
 ---
 
-## Research and Resources
+## Resources
 
 ### Academic Papers
 - DeepStack  
@@ -115,7 +115,9 @@ This repository is intended for:
 
 ### Datasets
 - Poker hand classification  
-- Custom self-play logs  
+- Custom self-play logs
+
+---
 
 ### Other Resources
 - [Cool read for 2-player poker... but I want to make a bot that does well in a 6-player game](https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf)  
@@ -128,7 +130,7 @@ This repository is intended for:
 
 ---
 
-## Main Research
+## Research
 
 ### Pluribus: A poker bot is the first AI to beat professionals in multiplayer no-limit Texas Hold'em (2019).
 
@@ -143,8 +145,6 @@ This repository is intended for:
 - **Multiplayer Scaling:** Adopt abstractions and search only around your node to manage computational complexity.  
 - **Opponent Modeling for Bluffing:** Fit a simple model (e.g., logistic regression, Bayesian updates) to track tendencies like frequency of bluffing or folding, adjusting your strategy exploitatively when edges are found.  
 - **Leverage Poker Frameworks:** Use tools like PokerKit for game state management and abstraction, and deep reinforcement learning for strategy fine-tuning.
-
----
 
 ### PokerGPT: An End-to-End Lightweight Solver for Multi-Player Texas Hold'em via LLM (Jan 2024)
 
