@@ -98,35 +98,33 @@ This repository is intended for:
 ## Resources
 
 ### Academic Papers
-- DeepStack  
-- Slumbot  
-- PokerBench  
-- Exploitability Theory  
+- [**DeepStack**](https://www.nature.com/articles/nature17122) – First AI to beat professional players in heads-up no-limit Hold'em using real-time neural evaluations.
+- [**Slumbot**](https://www.slumbot.com/) – Open-source bot for heads-up no-limit Hold'em, strong in academic benchmarks.
+- [**PokerBench**](https://arxiv.org/abs/2501.08328) – Evaluates LLMs on real-world poker scenarios using expert-labeled data.
+- [**Exploitability Theory**](https://cs.stanford.edu/people/ebrun/papers/exploitability.pdf) – Fundamental theory behind measuring deviation from Nash equilibrium in imperfect-information games.
 
-### Tutorials
-- Tutorials on CFR  
-- Bayesian Machine Learning  
-- Multi-Armed Bandits  
+### Tutorials & Learning Resources
+- [CFR (Counterfactual Regret Minimization)](https://int8.io/counterfactual-regret-minimization/) – Core algorithm for solving poker-like games.
+- [Bayesian Machine Learning (Coursera)](https://www.coursera.org/learn/bayesian-methods-in-machine-learning) – Useful for opponent modeling and uncertainty quantification.
+- [Multi-Armed Bandits (Lil'Log)](https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/) – Helps with learning strategies under uncertainty.
 
-### Libraries
-- OpenSpiel  
-- PokerRL  
-- PettingZoo  
+### Libraries & Frameworks
+- [**OpenSpiel**](https://github.com/deepmind/open_spiel) – A collection of environments and algorithms for research in general reinforcement learning and game theory.
+- [**PokerRL**](https://github.com/algorithmfoundry/PokerRL) – Deep RL framework specifically for training poker agents.
+- [**PettingZoo**](https://www.pettingzoo.ml/) – Multi-agent RL environment suite compatible with modern RL libraries.
 
 ### Datasets
-- Poker hand classification  
-- Custom self-play logs
+- [Poker Hand Classification Dataset](https://archive.ics.uci.edu/ml/datasets/Poker+Hand) – UCI dataset useful for classification tasks and model pretraining.
+- Custom self-play logs (generate using frameworks like PokerRL or OpenSpiel)
 
----
-
-### Other Resources
-- [Cool read for 2-player poker... but I want to make a bot that does well in a 6-player game](https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf)  
-- [MUST READ, still gathering resources](https://news.ycombinator.com/item?id=20414905)  
-- Pre-existing bots to look into:  
-  - **Pluribus** – first AI to beat humans in multiplayer poker (2019)  
-  - **ReBeL** – uses recursive reasoning + RL  
-  - **PokerSnowie** – commercial AI trained via self-play  
-- [Another interesting read but potentially outdated](https://poker-ai.org/page/2/)  
+### Other Noteworthy Resources
+- [Cool 2-player poker read (Xun et al., GECCO 2018)](https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf) – Focused on 2-player play, but has useful techniques; I'm focused on building a 6-player bot.
+- [**Pluribus HN Thread (MUST READ)**](https://news.ycombinator.com/item?id=20414905) – Key discussion and links about the first AI to beat humans in multiplayer no-limit Hold'em.
+- Pre-existing bots to explore:
+  - [**Pluribus**](https://science.org/doi/10.1126/science.aay2400) – First AI to defeat pros in multiplayer poker (2019)
+  - [**ReBeL**](https://arxiv.org/abs/2007.13544) – Combines recursive reasoning and reinforcement learning for general imperfect-information games.
+  - [**PokerSnowie**](https://www.pokersnowie.com/) – Commercial AI trained via massive self-play.
+- [Poker-AI.org Archives](https://poker-ai.org/page/2/) – Older but still informative source for theory and bot design discussions.
 
 ---
 
