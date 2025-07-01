@@ -95,71 +95,81 @@ This repository is intended for:
 
 ---
 
-## Resources
+## Research and Resources
 
-- Academic papers: DeepStack, Slumbot, PokerBench, Exploitability Theory
-- Tutorials on CFR, Bayesian ML, and multi-armed bandits
-- Libraries: OpenSpiel, PokerRL, PettingZoo
-- Datasets: Poker hand classification, custom self-play logs
-- Cool read for 2 player poker... but I want to make a bot that does well in a 6 player game (https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf).
-- MUST READ, still gathering resources (https://news.ycombinator.com/item?id=20414905)
-- Pre-existing bots to look into: Pluribus (first AI to beat humans in multiplayer poker, 2019), ReBeL (Uses recursive reasoning + RL), PokerSnowie (commercial AI trained via self-play)
-- Another interresting read but potentially outdated (https://poker-ai.org/page/2/).
+### Academic Papers
+- DeepStack  
+- Slumbot  
+- PokerBench  
+- Exploitability Theory  
 
---- 
+### Tutorials
+- Tutorials on CFR  
+- Bayesian Machine Learning  
+- Multi-Armed Bandits  
 
-## Research
+### Libraries
+- OpenSpiel  
+- PokerRL  
+- PettingZoo  
 
-### Abstract; 
+### Datasets
+- Poker hand classification  
+- Custom self-play logs  
 
-The **Pluribus** poker bot is the first AI to beat profeshionals in multiplayer no-limit Texas Hold'em (2019).
+### Other Resources
+- [Cool read for 2-player poker... but I want to make a bot that does well in a 6-player game](https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf)  
+- [MUST READ, still gathering resources](https://news.ycombinator.com/item?id=20414905)  
+- Pre-existing bots to look into:  
+  - **Pluribus** – first AI to beat humans in multiplayer poker (2019)  
+  - **ReBeL** – uses recursive reasoning + RL  
+  - **PokerSnowie** – commercial AI trained via self-play  
+- [Another interesting read but potentially outdated](https://poker-ai.org/page/2/)  
 
-What makes this project special?
+---
 
-1. **Solving Multiplayer No-Limit Hold'em**
-  Prev AI triumphs were limited to heads-up (two player) games. **Pluribus** is the first to consistantly win at 6-player.
+## Main Research
 
-2. **Hybrid Strategy: Equilibrium + Search**
-   Uses **approximate Nash equilibrium strategies precomputed for abstracted game states. At runtime, it performs **limited-depth search with real-time opponent modeling and **robust Monte Carlo sampling**, discarding opponent actions that are off-path or degenerate.
+### Pluribus
 
-3. **Efficiency**
-   Unlike earlier systemes requiring supercomputers, Pluribus runs on **a single machine with multiple cores**, making it more accessible.
+**Abstract:**  
+The Pluribus poker bot is the first AI to beat professionals in multiplayer no-limit Texas Hold'em (2019).
 
-How can I apply these techniques to my poker bot?
+**What makes this project special?**  
+- **Solving Multiplayer No-Limit Hold'em:** Prev AI triumphs were limited to heads-up (two-player) games. Pluribus is the first to consistently win at 6-player.  
+- **Hybrid Strategy: Equilibrium + Search:** Uses approximate Nash equilibrium strategies precomputed for abstracted game states. At runtime, it performs limited-depth search with real-time opponent modeling and robust Monte Carlo sampling, discarding opponent actions that are off-path or degenerate.  
+- **Efficiency:** Unlike earlier systems requiring supercomputers, Pluribus runs on a single machine with multiple cores, making it more accessible.
 
-1. **Abstract Large Games**
-   Simplify the game by mapping similar hands into fewer "buckets." Use equilibrium computation (e.g., CFR) over the abstracted version.
-   
-2. **Combine Offline + Online Strategy**
-   Precompute offline and at runtime use **online search** (depth limited) combined with **opponent-specific adjustments** based on recent play.
-   
-3. **Multiplayer Scaling**
-   Adopt abstractions and search only around your node other than manage computational complexity.
-   
-4. **Opponent Modeling for Bluffing**
-   Fit a simple model (e.g., logistic regression, Bayesian updates) to track tendancies like frequency of bluffing or folding, adjusting your strategy exploitatively when edges are found.
-   
-5. **Leverage Poker Frameworks**
-    Use tools like PokerKit for game state management and abstraction, and **deep reinforcement learning** for strategy fine-tuning.
+**How can I apply these techniques to my poker bot?**  
+- **Abstract Large Games:** Simplify the game by mapping similar hands into fewer "buckets." Use equilibrium computation (e.g., CFR) over the abstracted version.  
+- **Combine Offline + Online Strategy:** Precompute offline and at runtime use online search (depth-limited) combined with opponent-specific adjustments based on recent play.  
+- **Multiplayer Scaling:** Adopt abstractions and search only around your node to manage computational complexity.  
+- **Opponent Modeling for Bluffing:** Fit a simple model (e.g., logistic regression, Bayesian updates) to track tendencies like frequency of bluffing or folding, adjusting your strategy exploitatively when edges are found.  
+- **Leverage Poker Frameworks:** Use tools like PokerKit for game state management and abstraction, and deep reinforcement learning for strategy fine-tuning.
 
-**PokerGPT:** An End-to-End Lightweight Solver for Multi-Player Texas Hold'em via LLM (Jan 2024).
+---
 
-What makes this project special?
+### PokerGPT: An End-to-End Lightweight Solver for Multi-Player Texas Hold'em via LLM (Jan 2024)
 
-   PokerGPT overcomes exponential game tree growth of CFR in multi-player games by transforming a set of textual records acquired from real games into prompts, and uses them to fine-tune a lightweight pre-trained LLM further processing them into textual instruction using prompt engineering techniques.
+**What makes this project special?**  
+PokerGPT overcomes exponential game tree growth of CFR in multiplayer games by transforming a set of textual records acquired from real games into prompts, and uses them to fine-tune a lightweight pre-trained LLM — further processing them into textual instructions using prompt engineering techniques.
 
-How can I apply these techniques to my poker bot?
+**How can I apply these techniques to my poker bot?**  
+Try using an LLM for high-level reasoning and pair it with quick numeric modules to compute odds precisely — mitigating LLM math weakness.
 
-   Try using LLM for high-level reasoning and pair it with quick numeric modules to compute odds percisely - mitigating LLM math weakness
+---
 
-### TLDR;
+### TL;DR
 
-**Pluribus** is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI. **PokerGPT** is a flexible, lightweight, text-first system that’s easier to build, train, and scale—but it sacrifices GTO rigor, math precision, and adaptive play.
+Pluribus is a true equilibrium-seeking agent with robust theory and real-time adjustments. It’s the gold standard for competitive and provably strong multiplayer poker AI.  
+PokerGPT is a flexible, lightweight, text-first system that’s easier to build, train, and scale — but it sacrifices GTO rigor, math precision, and adaptive play.
 
-Make sure to **Leverage frameworks** like OpenHoldem to benchmark and evaluate the bot alongside baselines.
+Make sure to leverage frameworks like **OpenHoldem** to benchmark and evaluate the bot alongside baselines.
 
-Sources: 
+---
 
-**Pluribus**: https://news.ycombinator.com/item?id=20414905
-**PokerGPT**: https://arxiv.org/abs/2401.06781?utm_source=chatgpt.com
+### 🔗 Sources
+- Pluribus: https://news.ycombinator.com/item?id=20414905  
+- PokerGPT: https://arxiv.org/abs/2401.06781
+
 
