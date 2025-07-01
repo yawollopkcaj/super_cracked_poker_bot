@@ -1,0 +1,10 @@
+# requirements.txt
+poker         # poker-hand evaluator (e.g., 'treys' or similar)
+numpy
+scikit-learn
+matplotlib
+pandas
+jupyter
+tqdm
+torch
+gym

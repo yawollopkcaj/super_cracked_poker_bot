@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-07-01T12:10:17.238218",
+  "players": [
+    "Bot_A",
+    "Bot_B"
+  ],
+  "hand_strengths": {
+    "Bot_A": 0.11051187919735339,
+    "Bot_B": 0.979453588385509
+  },
+  "actions": {
+    "Bot_A": "fold",
+    "Bot_B": "raise"
+  },
+  "winner": "Bot_B"
+}
