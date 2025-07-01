@@ -101,4 +101,7 @@ This repository is intended for:
 - Tutorials on CFR, Bayesian ML, and multi-armed bandits
 - Libraries: OpenSpiel, PokerRL, PettingZoo
 - Datasets: Poker hand classification, custom self-play logs
-- Cool read for 2 player poker... but I want to make a bot that does well in a ~6-8 player game (https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf).
+- Cool read for 2 player poker... but I want to make a bot that does well in a 6 player game (https://nn.cs.utexas.edu/downloads/papers/xun.gecco18.pdf).
+- MUST READ, still gathering resources (https://news.ycombinator.com/item?id=20414905)
+- Pre-existing bots to look into: Pluribus (first AI to beat humans in multiplayer poker, 2019), ReBeL (Uses recursive reasoning + RL), PokerSnowie (commercial AI trained via self-play)
+- Another interresting read but potentially outdated (https://poker-ai.org/page/2/).
