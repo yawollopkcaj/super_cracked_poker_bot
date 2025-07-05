@@ -170,4 +170,6 @@ Try using an LLM for high-level reasoning and pair it with quick numeric modules
 - Pluribus: https://news.ycombinator.com/item?id=20414905  
 - PokerGPT: https://arxiv.org/abs/2401.06781
 
+Cool video: https://www.youtube.com/watch?v=MWRXx2saLw4
+
 
